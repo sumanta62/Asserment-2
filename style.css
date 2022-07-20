@@ -1,0 +1,331 @@
+body{
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header{
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(2, 2, 2, 0.959);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+.header-title{
+    margin-left: 50px;
+}
+.header-title h1{ 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+}
+
+.header-title p{ 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgb(184, 176, 168);
+}
+/* .button {
+   margin-top: 30px;
+   margin-bottom: 30px;
+} */
+
+.button a {
+    color: #fff;
+    padding: 12px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition:  0.5s ;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 8px;
+    background:  rgb(209, 26, 26);
+  }
+ 
+.button :hover {
+    color: #141313;
+    background:  #fff;
+  }
+
+.header-right img{
+    margin-top: 30px;
+    width: 500px;
+}
+.header-right{
+    margin: 0 30px;
+}
+/* ===================== 
+Header ksection end 
+===================== */
+.would-cup-section{
+    padding: 50px 0;
+    width: 90%;
+    margin: auto;
+}
+.would-cup{
+    display: grid;
+    grid-template-columns:270px 1fr;
+   grid-column-gap: 20px;
+}
+.match-detiles{
+    /* width: 190px; */
+    max-height: 252px;
+    background-color: rgba(2, 2, 2, 0.959);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.first-btn a{
+    display: block;
+    padding: 15px 29px;
+    border-radius: 10px;
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: aliceblue;
+    transition: 0.5s;
+}
+.first-btn a:hover{
+    background-color: rgb(209, 26, 26);
+    color: white;
+}
+.first-btn .blog{
+    background-color: rgb(209, 26, 26);
+    color: white;
+}
+.view-btn{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    display: none;
+    
+}
+.view-btn a{
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(209, 26, 26);
+    transition: 0.5s;
+}
+
+/* ----------- */
+.live-chanel{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+}
+
+.transfer-blog{
+    border: 1px solid rgb(231, 222, 222);
+    border-radius: 10px;
+}
+
+.transfer-blog img{
+    width: 100%;
+}
+.transfer {
+   margin: 20px 20px 20px ;
+}
+.transfer a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 5px 14px;
+}
+.transfer p{
+   font-size: 14px;
+}
+.blog-icon{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:25px;
+    color: rgb(90, 87, 83);
+    font-size: 13px;
+}
+/* =============== footer section start ================== */
+.footer-top{
+    max-width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    color: rgb(245, 242, 237);
+    background-color: rgba(0, 0, 0, 0.952);
+
+}
+.footer-title .horijental{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+.footer-bottom a{
+    display:inline-block;
+    text-decoration: none;
+    color: #B9B9B9;
+    padding: 20px ;
+}
+.footer-icons {
+    margin-top: 20px;
+}
+.footer-icons a{
+    color: #B9B9B9;
+    font-size: 20px;
+    padding: 10px;
+}
+.footer-icons a:hover{
+    color: #0532ff;
+}
+/* ====================== 
+Index file-1 end 
+Index file-2 start 
+==============================*/
+.country{
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px solid rgb(209, 200, 200);
+    border-radius: 5px;
+}
+.country-select{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+}
+.country-select p{
+    padding: 0 10px;
+  
+}
+.country h6{
+    margin: 0;
+}
+/* ============== ============
+responsaive css 
+========== ===================*/
+@media only screen and (max-width: 576px) {
+
+    .header, .would-cup-section{
+        width: 100%;
+    }
+    .header, .would-cup, .live-chanel{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .header{
+        text-align: center;
+    }
+    .header-title{
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .header-title h1{ 
+        font-size: 27px;
+        line-height: 35px;
+     }
+     .header-title .pssage{
+        width: 350px;
+    }
+    .header-title .text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+     
+     }
+     
+     .header-img img{
+        width: 100%;
+        margin-top: 0px;
+     }
+     .match-detiles{
+        background-color:transparent;
+        padding: 30px 0;
+       
+    }
+    
+     .transfer-blog{
+        border-radius: 15px;
+     }
+     .transfer-blog img{
+        width: 100%;
+        margin:0 auto;
+        text-align: center;
+     }
+    
+    .live-chanel{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .footer-bottom{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    
+}
+
+/* ----------------
+Tablet Responsive
+------------------ */
+@media only screen and (min-width: 577px) and (max-width:991px) {
+    .header, .would-cup-section{
+        width: 90%;
+    }
+    .header-title h1{ 
+        font-size: 35px;
+        line-height: 35px;
+     }
+     
+     .header-right img{
+        margin-top: 30px;
+        width: 100%;
+    }
+    .would-cup{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        justify-items: center;
+        
+    }
+    .match-detiles{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: transparent;
+        padding: 30px 0;
+    }
+    .first-btn a{
+        font-size: 14px;
+        padding: 12px 10px;
+    }
+    .live-chanel{
+        grid-template-columns: repeat(2, 1fr);
+
+        justify-content: center;
+    }
+    .view-btn{
+    display: flex;
+    justify-content: center;
+        
+    }
+
+}
+/*  ====================  Laptop responsive ================= */
